@@ -1,0 +1,18 @@
+.header-container{
+    padding: 0.8em 2em;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.header-container h1{
+    font-size: 1.4em;
+    font-weight: lighter;
+    color: #393E46;
+}
+
+.header-container div img{
+    width: 2em;
+    margin: 0 0.3em;
+}
