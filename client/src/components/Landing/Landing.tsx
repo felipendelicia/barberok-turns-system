@@ -1,11 +1,13 @@
 import React from 'react'
 
 import config from '../../config'
+import "./Landing.css"
 
 const Landing = () => {
   return (
     <div className="landing-container">
-      <img src={config.imgURL.landingImage}/>
+      <div className='landing-container-main'>
+      </div>
     </div>
   )
 }

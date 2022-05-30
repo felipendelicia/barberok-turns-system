@@ -1,18 +1,19 @@
 .footer-container{
-    padding: 0.3em 0;
+    padding: 0.1em 0.5em;
     position: fixed;
     bottom: 0px;
     right: 4em;
+    border-radius: 9999px;
 }
 
 .footer-container a{
     font-size: 1.1em;
-    font-weight: lighter;
+    color: #fff;
 }
 
 .footer-container a span {
-    color: #5463FF;
-    font-weight: normal;
+    color: #c43d2e;
+    font-weight: bold;
 }
 
 @media (max-width: 1000px) {
