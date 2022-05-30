@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<TakeTurns/>}/>
+          <Route path="/take-turn" element={<TakeTurns/>}/>
           <Route path="/current-turns" element={<Turns/>}/>
         </Routes>
       </BrowserRouter>
