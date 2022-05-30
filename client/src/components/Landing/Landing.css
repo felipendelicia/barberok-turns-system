@@ -1,11 +1,10 @@
-.landing-container{
-    height: 100vh;
-    background-image: url(../../../public/assets/img/landing-img.jpg);
-    background-position: center;
-    background-size:cover;
+.landing-container-main{
+    height: 100vh; 
 }
 
-.landing-container-main{
+.landing-container{
+    background-color: rgba(0,0,0,0.5);
     height: 100%;
-    background: linear-gradient(-70deg, rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    display: grid;
+    place-content: center;
 }

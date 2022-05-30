@@ -9,13 +9,8 @@ a{
   text-decoration: inherit;
 }
 
-
-/*
-  COLORS:
-
-  black: #393E46;
-  white: #EEEEEE;
-  blue: #00ADB5
-  light blue: #AAD8D3
-
-*/
+button {
+  outline: inherit;
+  background-color: inherit;
+  border: inherit;
+}

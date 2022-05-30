@@ -1,0 +1,49 @@
+.landing-content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-text-container{
+    margin-right: 2em;
+    width: 40vw
+}
+
+.landing-text-container h1{
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 0.2em;
+}
+.landing-text-container p{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.landing-btn-take-turn button{
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+    background-color: #c43d2e;
+    border-radius: 9999px;
+}
+
+.landing-btn-take-turn{
+    margin-bottom: 1em;
+}
+
+.landing-btns-contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.landing-btns-contact a img{
+    width: 3em;
+}
+
+@media (max-width: 1000px) {
+}
