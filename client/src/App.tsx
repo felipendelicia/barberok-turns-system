@@ -1,21 +1,27 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header/Header';
-import TakeTurns from './components/TakeTurns/TakeTurns';
-import Turns from './components/Turns/Turns';
+import Home from './views/Home';
+import TakeTurnsView from './views/TakeTurnsView';
+import TurnsView from './views/TurnsView';
 import Footer from './components/Footer/Footer';
+
+import "./App.css"
 
 function App() {
 
   return (
     <div className="App">
       <Header/>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/take-turn" element={<TakeTurns/>}/>
-          <Route path="/current-turns" element={<Turns/>}/>
-        </Routes>
-      </BrowserRouter>
+      <div className="container">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/take-turn" element={<TakeTurnsView/>}/>
+            <Route path="/current-turns" element={<TurnsView/>}/>
+          </Routes>
+        </BrowserRouter>
+      </div>
       <Footer/>
     </div>
   );
