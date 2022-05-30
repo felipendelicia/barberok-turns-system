@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}/>
@@ -19,7 +18,6 @@ function App() {
             <Route path="/current-turns" element={<TurnsView/>}/>
           </Routes>
         </BrowserRouter>
-      </div>
       <Footer/>
     </div>
   );

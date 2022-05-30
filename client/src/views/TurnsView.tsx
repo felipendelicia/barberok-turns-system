@@ -3,7 +3,7 @@ import Turns from '../components/Turns/Turns'
 
 const TurnsView = () => {
   return (
-    <div>
+    <div className="container">
       <Turns/>
     </div>
   )
