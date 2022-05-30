@@ -17,7 +17,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/take-turn" element={<TakeTurnsView/>}/>
+            <Route path="/take-turns" element={<TakeTurnsView/>}/>
             <Route path="/current-turns" element={<TurnsView/>}/>
           </Routes>
         </BrowserRouter>
