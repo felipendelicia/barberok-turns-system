@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Header from './components/Header/Header';
 import Home from './views/Home';
 import TakeTurnsView from './views/TakeTurnsView';
 import TurnsView from './views/TurnsView';
@@ -12,7 +11,6 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
       <div className="container">
         <BrowserRouter>
           <Routes>
