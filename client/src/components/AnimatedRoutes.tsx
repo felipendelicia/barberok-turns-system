@@ -11,7 +11,7 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/current-turns" element={<TurnsView />} />
       </Routes>
     </AnimatePresence>
