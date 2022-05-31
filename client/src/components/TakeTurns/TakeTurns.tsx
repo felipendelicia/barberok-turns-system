@@ -32,6 +32,17 @@ const TakeTurnsModal = (props:{closeModal:()=>void}) => {
         <div className="take-turns-modal-content">
 
           <h2>Sacá un turno 💥</h2>
+          
+          <form className="take-turns-form">
+
+            <input type="text" placeholder=" ingresá tu nombre"/> {/*name*/}
+            <input type="text" placeholder=" ingresá tu apellido"/> {/*surname*/}
+            <input type="number" placeholder=" ingresá fecha"/> {/*date*/}
+            <input type="number" placeholder=" ingresá horario"/> {/*time*/}
+
+          </form>
+
+          <button> Enviar </button>
 
         </div>
 

@@ -10,6 +10,8 @@
 }
 
 .take-turns-modal-content{
+    margin: 0.4em 0 0.6em;
+    text-align: center;
     width: 100%;
     height: 100%;
 }
@@ -17,3 +19,37 @@
 .take-turns-modal-content h2 {
     color: #ed331e;
 }
+
+.take-turns-form{
+    display: inline;
+}
+
+.take-turns-form input{
+    margin: 0.4em;
+    padding: 0 0.4em;
+    font-size: 1.3em;
+    border-radius: 8px;
+    background: #cf4131;
+    color: #ffffff;
+}
+
+.take-turns-modal-content button{
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #ed331e;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: #ffffff;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #ffffff;
+  }

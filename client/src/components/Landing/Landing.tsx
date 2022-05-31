@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import config from "../../config/config";
 import "./Landing.css";
 import "./LandingContent.css";
@@ -69,7 +69,12 @@ const Landing = () => {
           statusModal={isOpenModal}
         />
       </div>
-      {isOpenModal && <TakeTurnsModal closeModal={closeModal}/>}
+      <AnimatePresence
+      initial={false}
+      exitBeforeEnter={true}
+      onExitComplete={()=>null}>
+        {isOpenModal && <TakeTurnsModal closeModal={closeModal}/>}
+      </AnimatePresence>
     </div>
   );
 };
