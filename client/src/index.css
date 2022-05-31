@@ -1,6 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Mukta', sans-serif;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button, input {
+  outline: inherit;
+  background-color: inherit;
+  border: inherit;
 }
