@@ -37,8 +37,8 @@ const TakeTurnsModal = (props:{closeModal:()=>void}) => {
 
             <input type="text" placeholder=" ingresá tu nombre"/> {/*name*/}
             <input type="text" placeholder=" ingresá tu apellido"/> {/*surname*/}
-            <input type="date" placeholder=" ingresá fecha"/> {/*date*/}
-            <input type="time" placeholder=" ingresá horario"/> {/*time*/}
+            <input type="date"/> {/*date*/}
+            <input type="time"/> {/*time*/}
 
           </form>
 
