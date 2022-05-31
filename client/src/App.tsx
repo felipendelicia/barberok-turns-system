@@ -1,24 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import Home from './views/Home';
-import TakeTurnsView from './views/TakeTurnsView';
-import TurnsView from './views/TurnsView';
-import Footer from './components/Footer/Footer';
-
-import "./App.css"
+import { BrowserRouter as Router } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import AnimatedRoutes from "./components/AnimatedRoutes";
+import "./App.css";
 
 function App() {
 
   return (
     <div className="App">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/take-turns" element={<TakeTurnsView/>}/>
-            <Route path="/current-turns" element={<TurnsView/>}/>
-          </Routes>
-        </BrowserRouter>
-      <Footer/>
+      <Router>
+        <AnimatedRoutes/>
+      </Router>
+      <Footer />
     </div>
   );
 }

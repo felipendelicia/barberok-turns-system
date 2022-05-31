@@ -1,7 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
-import config from "../../config";
+import config from "../../config/config";
 import "./Landing.css";
 import "./LandingContent.css";
 
@@ -21,9 +20,7 @@ const LandingContent = () => {
       </div>
       <div className="landing-btns-container">
         <div className="landing-btn-take-turn">
-          <Link to="/take-turns">
-            <button>Sacar turno</button>
-          </Link>
+          <button>Sacar turno</button>
         </div>
         <div className="landing-btns-contact">
           <a
@@ -47,6 +44,9 @@ const LandingContent = () => {
 };
 
 const Landing = () => {
+
+  const [isOpenModal, setIsOpenModal] = useState(false)
+
   return (
     <div className="landing-container-main" style={landingContainerStyle}>
       <div className="landing-container">
