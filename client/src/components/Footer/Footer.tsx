@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <a href={config.externURL.programmerLinkedIn} target="_blank" rel="noreferrer">
-        Created By <span>Felipe Delicia</span>
+        Created by <span>F. Delicia</span>
       </a>
     </div>
   );

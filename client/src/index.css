@@ -9,7 +9,7 @@ a{
   text-decoration: inherit;
 }
 
-button {
+button, input {
   outline: inherit;
   background-color: inherit;
   border: inherit;

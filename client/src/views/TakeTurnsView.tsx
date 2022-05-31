@@ -4,7 +4,7 @@ import TakeTurns from '../components/TakeTurns/TakeTurns'
 
 const TakeTurnsView = () => {
   return (
-    <div className="container">
+    <div>
       <TakeTurns/>
     </div>
   )
