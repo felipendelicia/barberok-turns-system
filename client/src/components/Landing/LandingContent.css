@@ -32,7 +32,7 @@
     padding: 0.5em 1.5em;
     background-color: #ed331e;
     border-radius: 9999px;
-    transition: background-color 3s ease;
+    transition: background-color 2s ease;
     cursor: pointer;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .landing-btn-take-turn button:hover{
-    background-color: #861508;
+    background-color: #eb3521;
 }
 
 .landing-btns-contact a img:hover{

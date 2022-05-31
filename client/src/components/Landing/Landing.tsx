@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 import config from "../../config/config";
 import "./Landing.css";
 import "./LandingContent.css";
+import TakeTurnsModal from "../TakeTurns/TakeTurns";
 
 const landingContainerStyle = {
   backgroundImage: `url(${config.imgURL.landingImage})`,
@@ -11,7 +12,11 @@ const landingContainerStyle = {
   backgroundRepeat: "no-repeat",
 };
 
-const LandingContent = () => {
+const LandingContent = (props: {
+  openModal: () => void;
+  closeModal: () => void;
+  statusModal: boolean;
+}) => {
   return (
     <div className="landing-content-container">
       <div className="landing-text-container">
@@ -20,7 +25,13 @@ const LandingContent = () => {
       </div>
       <div className="landing-btns-container">
         <div className="landing-btn-take-turn">
-          <button>Sacar turno</button>
+          <motion.button
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={props.statusModal ? props.closeModal : props.openModal}
+          >
+            Sacar turno
+          </motion.button>
         </div>
         <div className="landing-btns-contact">
           <a
@@ -44,14 +55,21 @@ const LandingContent = () => {
 };
 
 const Landing = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
-  const [isOpenModal, setIsOpenModal] = useState(false)
+  const openModal = () => setIsOpenModal(true);
+  const closeModal = () => setIsOpenModal(false);
 
   return (
     <div className="landing-container-main" style={landingContainerStyle}>
       <div className="landing-container">
-        <LandingContent />.
+        <LandingContent
+          openModal={openModal}
+          closeModal={closeModal}
+          statusModal={isOpenModal}
+        />
       </div>
+      {isOpenModal && <TakeTurnsModal closeModal={closeModal}/>}
     </div>
   );
 };
