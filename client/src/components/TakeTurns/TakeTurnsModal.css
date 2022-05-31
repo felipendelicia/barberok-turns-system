@@ -18,6 +18,7 @@
 
 .take-turns-modal-content h2 {
     color: #ed331e;
+    font-size: 1.8em;
 }
 
 .take-turns-form{
@@ -31,6 +32,7 @@
     border-radius: 8px;
     background: #cf4131;
     color: #ffffff;
+    width: 30%;
 }
 
 .take-turns-modal-content button{
