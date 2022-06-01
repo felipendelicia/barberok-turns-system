@@ -1,5 +1,5 @@
 // Import modules
-
+import config from "./config/config"
 import express, { json, urlencoded } from "express"
 import morgan from "morgan"
 import cors from "cors"
@@ -14,7 +14,7 @@ const app = express()
 
 // App settings
 
-app.set("port", 3000)
+app.set("port", config.PORT)
 
 // App middlewares
 
