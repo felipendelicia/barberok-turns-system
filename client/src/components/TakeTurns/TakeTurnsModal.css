@@ -35,6 +35,18 @@
     width: 30%;
 }
 
+.take-turns-form textarea{
+    display: block;
+    resize: none;
+    border-radius: 8px;
+    background: #cf4131;
+    color: #ffffff;
+    width: 60%;
+    font-size: 1.3em;
+    padding: 0.2em 0.4em;
+    margin: 0.2em auto 0.4em;
+}
+
 .take-turns-modal-content button{
     display: block;
     font-size: 1.2em;
@@ -59,6 +71,12 @@
         background: #cf4131;
         color: #ffffff;
         width: 40%;
+    }
+    .take-turns-form textarea{
+        width: 80%;
+        font-size: 2.3em;
+        padding: 0.3em 0.5em;
+        margin: 0.2em auto 0.8em;
     }
     .take-turns-modal-content button{
         font-size: 3em;

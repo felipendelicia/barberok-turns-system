@@ -20,7 +20,7 @@ const LandingContent = (props: {
   return (
     <div className="landing-content-container">
       <div className="landing-text-container">
-        <h1>barberok</h1>
+        <h1>Barberok</h1>
         <p>Tocá en sacar turno, seleccioná un día y vení a cortarte 🧨</p>
       </div>
       <div className="landing-btns-container">

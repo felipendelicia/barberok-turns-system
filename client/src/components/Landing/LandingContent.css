@@ -96,6 +96,9 @@
     .landing-btns-contact a img{
         width: 10em;
     }
+    .landing-btns-contact a img:hover{
+        width: 8.5em;
+    }
     .landing-btns-contact a:first-child img{
         margin-right: 5em;
     }

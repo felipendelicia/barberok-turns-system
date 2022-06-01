@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import React from "react";
 import "./TakeTurnsBackdrop.css";
 import "./TakeTurnsModal.css";
 
-const TakeTurnsModal = (props:{closeModal:()=>void}) => {
+const TakeTurnsModal = (props: { closeModal: () => void }) => {
   return (
     <motion.div
       className="take-turns-backdrop-container"
@@ -28,17 +27,27 @@ const TakeTurnsModal = (props:{closeModal:()=>void}) => {
         }}
         exit={{ y: "100vh", opacity: 0 }}
       >
-        
         <div className="take-turns-modal-content">
-
           <h2>🔥 Sacá un turno 🔥</h2>
-          
-          <form className="take-turns-form">
 
-            <input type="text" placeholder=" ingresá tu nombre"/> {/*name*/}
-            <input type="text" placeholder=" ingresá tu apellido"/> {/*surname*/}
-            <input type="date"/> {/*date*/}
-            <input type="time"/> {/*time*/}
+          <form className="take-turns-form">
+            <input type="text" placeholder=" ingresá tu nombre" /> {/*name*/}
+            <input type="text" placeholder=" ingresá tu apellido" />{" "}
+            {/*surname*/}
+            <input
+              type="text"
+              placeholder="ingresa la fecha"
+              onFocus={(e) => (e.target.type = "date")}
+            />{" "}
+            {/*date*/}
+            <input
+              type="text"
+              placeholder="ingresa la fecha"
+              onFocus={(e) => (e.target.type = "time")}
+            />{" "}
+            {/*time*/}
+
+            <textarea placeholder="Comentarios para el barbero"></textarea>
 
           </form>
 
@@ -48,9 +57,7 @@ const TakeTurnsModal = (props:{closeModal:()=>void}) => {
           >
             Mandale!
           </motion.button>
-
         </div>
-
       </motion.div>
     </motion.div>
   );
